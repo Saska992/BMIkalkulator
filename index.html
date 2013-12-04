@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>BMI kalkulator</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link href="http://detoxweightlossinfo.com/wp-content/uploads/2013/09/BMI-Calculator.gif" rel="shortcut icon"/>
+		<script language="JavaScript">
+			function računaj(){
+				var težina = document.bmiForm.težina.value
+			    var visina = document.bmiForm.visina.value
+				if(težina > 0 && visina > 0){
+				var BMI = Math.round((težina / (visina * visina)) * 100) / 100
+				bmiForm.rezultat.value = BMI
+				if(BMI <= 15){
+				document.bmiForm.meaning.value = "ANOREKSIJA"
+				}
+				if(BMI > 15 && BMI <= 18.5){
+				document.bmiForm.meaning.value = "MRŠAVOST"
+				}
+				if(BMI > 18.5 && BMI <= 25){
+				document.bmiForm.meaning.value = "NORMALNO"
+				}
+				if(BMI > 25 && BMI <= 30){
+				document.bmiForm.meaning.value = "POPUNJEN/A"
+				}
+				if(BMI > 30 && BMI <= 40){
+				document.bmiForm.meaning.value = "DEBEO/LA"
+				}
+				if(BMI > 40){
+				document.bmiForm.meaning.value = "GOJAZNOST"
+				}
+				}
+				else{
+				alert("Molimo, unesite ispravne podatke!")
+				}
+				
+				
+			};
+		</script>
+	</head>
+
+	<body>
+	<div id = "wrap">
+	
+		
+		<h1>BMI kalkulator</h1>
+		
+		<h2>Šta je BMI?</h2>
+		<p>Indeks telesne mase (engl. Body Mass Index, BMI) je metoda proračuna uhranjenosti. BMI se izračunava vrlo jednostavno, a temelji se na odnosu telesne težine i visine osobe. Što je indeks više izvan okvira urednih vrednosti, to je veći rizik od oboljevanja od raznih srčanih bolesti, dijabetesa i povišenog krvnog pritiska. BMI kalkulator Vam omogućava da na jednostavan način izračunate Vaš BMI. Takođe, na osnovu rezultata ćete dobiti i informaciju kojoj od navedenih kategorija pripadate.
+		
+		</p>
+		
+		<p>Na osnovu rezultata, svrstani ste u kategoriju: </p>
+			<ul>
+				<li>Anoreksija </li>
+				<li>Mršavost </li>
+				<li>Normalno </li>
+				<li>Popunjen/a </li>
+				<li>Debeo/la</li>
+				<li>Gojaznost </li>
+			</ul>
+		<h3>Izračunajte Vaš BMI</h3>
+		
+			<form name="bmiForm">
+			<img src="http://detoxweightlossinfo.com/wp-content/uploads/2013/09/BMI-Calculator.gif" height="160" width="160"/>
+			<div id = "bmi">
+			
+			<div id = "račun">
+				</br>
+				Unesite težinu : </br>
+				<input type="text" name="težina" size="22"> kg<br>
+				Unesite visinu :   </br>
+				<input type="text" name="visina" size="22"> m <br>
+			
+		
+			
+				<input type="button" value="Izračunaj BMI" class="izr" onClick = "računaj()"> <br>
+				<input type="button" value="Resetuj" class = "brisi "onClick="bmiForm.reset()" />
+			
+			</div>
+			<div id = "info">
+				<b>Vaš BMI iznosi :</b></br>
+				<input type="text" name="rezultat" disabled="disabled" size="20" class = "podaci"> <br>
+				<b>Pripadate kategoriji : </b></br>
+				<input type="text" name="meaning" disabled="disabled" size="20" class = "podaci"><br />
+				
+			</div>	
+			</div>
+			</form>
+		
+		
+			
+		<div id = "footer">
+				<p> Dizajnirala <i>Aleksandra Pavlović</i></p>
+		</div>
+		 </div>
+		
+	</body>
+
+
+
+</html>

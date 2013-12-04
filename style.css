@@ -1,0 +1,81 @@
+#wrap {
+	width: 1080px;
+	margin: 20px auto;
+	min-height: 600px;
+	padding: 10px 20px 3px 20px;
+	background-color: white;
+	border: 1px solid #4169E1;
+}
+body {
+	background: #00CED1; 
+	font-family: Open-Sans;
+	color: #4169E1;
+}
+form[name="bmiForm"] {
+	padding-left: 10px;
+	padding-top: 10px;
+	height: 250px;
+}
+#bmi{
+	display: inline-block;
+	margin-left: 120px;
+}
+#račun{
+	float: left;
+	padding: 10px 20px 20px 20px;
+}
+#info{
+	width: 250px;
+	height: 150px;
+	background-color: #48D1CC;
+	border: 2px solid #4169E1;
+	float: right;
+	padding: 20px 20px 3px 20px;	
+
+}
+h1{
+	color: #4169E1;
+	text-align: center;
+}
+h2{
+	color: #4169E1;
+}
+h3{
+	color: #4169E1;
+	text-align: center;
+}
+p{
+	color: #4169E1;
+}
+ul{
+	color: #4169E1;
+}
+input.izr{
+	color: #4169E1;
+	border: 1px solid #4169E1;
+	font-size: 16px;
+}
+input.brisi{
+	font-size: 16px;
+	color: #4169E1;
+	border: 1px solid #4169E1;
+}
+input.izr:hover{
+	font-weight: bold;
+}
+input.brisi:hover{
+	font-weight: bold;
+}
+input[type="text"]{
+	border: 1px solid #4169E1;
+	color: #4169E1;
+}
+#footer{
+	margin-left: 460px;
+	margin-bottom: 5px;
+	font-size: 14px;
+}
+.podaci{
+ font-size: 20px;
+ text-align: center;
+}
